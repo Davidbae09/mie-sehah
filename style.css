@@ -244,3 +244,40 @@ footer {
     font-size: 0.9em;
     color: #666;
 }
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero {
+        height: 50vh;
+        background-size: contain;
+    }
+
+    .content-section h4 {
+        font-size: 1em;
+        padding: 5px 0;
+    }
+
+    .content-section p, .content-section ol {
+        font-size: 0.9em;
+    }
+
+    .product-card {
+        width: 90%;
+    }
+
+    .product-card img {
+        height: 150px;
+    }
+
+    .modal-content {
+        width: 95%;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
