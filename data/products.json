@@ -1,0 +1,23 @@
+[
+    {
+        "kode_produk": "P0001",
+        "nama": "Sayap Ceker Bakso",
+        "image": "images/sayap-ceker-baksoo.jpg",
+        "deskripsi": "Sayap ceker bakso dengan cita rasa gurih dan nikmat",
+        "harga": 20000
+    },
+    {
+        "kode_produk": "P0002",
+        "nama": "sayap ceker basker",
+        "image": "images/sayap-ceker-basker.jpg",
+        "deskripsi": "Varian sayap ceker basker",
+        "harga": 20000
+    },
+    {
+        "kode_produk": "P0003",
+        "nama": "sayap ceker",
+        "image": "images/ori.jpg",
+        "deskripsi": "Varian sayap ceker",
+        "harga": 20000
+    }
+]
