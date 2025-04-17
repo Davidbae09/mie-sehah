@@ -97,7 +97,7 @@ function viewDetail(product) {
 
 // Fungsi untuk memesan via WhatsApp
 function orderViaWhatsApp(productName, productPrice) {
-    const phoneNumber = '+628522285578';
+    const phoneNumber = '+6285222285578';
     const message = `Halo, saya ingin memesan:\n- Produk: ${productName}\n- Harga: Rp.${productPrice.toLocaleString('id-ID')}\nTolong konfirmasi ketersediaan dan detail pesanan. Terima kasih!`;
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
