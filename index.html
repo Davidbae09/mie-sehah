@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warung Mie Sehah</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <ul>
+            <li><a href="#" data-tab="home" onclick="showHero(true)">Home</a></li>
+            <li><a href="#" data-tab="products" onclick="showHero(false)">Produk</a></li>
+            <li><a href="#" data-tab="about" onclick="showHero(false)">Tentang Kami</a></li>
+            <li><a href="#" data-tab="manual" onclick="showHero(false)">Manual Aplikasi</a></li>
+            </ul>
+        </nav>
+        <script>
+            function showHero(show) {
+            const hero = document.querySelector('.hero');
+            if (show) {
+                hero.style.display = 'block';
+            } else {
+                hero.style.display = 'none';
+            }
+            }
+            // Default state for hero
+            document.addEventListener('DOMContentLoaded', () => showHero(true));
+        </script>
+        <div class="hero"></div>
+    </header>
+
+    <!-- Konten Dinamis -->
+    <main>
+        <!-- Konten Home -->
+        <section id="home" class="content-section">
+            <h4>mie sehah resi kurnia adalah makanan pedas yang sangat disukai di kalangan remaja dan mie sehah makanan pedas yang sangat enak dan berbahan dari mie dan rempah-rempah yang sangat berkualitas.</h4>
+            <p><p>
+            <h2>Produk Kami</h2>
+            <div class="product-list" id="product-list-home"></div>
+        </section>
+
+        <!-- Konten Produk -->
+        <section id="products" class="content-section products" style="display: none;">
+            <h2>Produk Kami</h2>
+            <div class="product-list" id="product-list"></div>
+        </section>
+
+        <!-- Konten Tentang Kami -->
+        <section id="about" class="content-section" style="display: none;">
+            <h2 style="color: #008000; text-transform: uppercase; margin-bottom: 20px;">Tentang Kami</h2>
+            <p style="font-size: 1.1em; line-height: 1.6; color: #555; text-align: center;">
+                Mie Sehah adalah makanan pedas yang sangat disukai di kalangan remaja. Dibuat dengan bumbu-bumbu dan bahan-bahan berkualitas, 
+                Mie Sehah Resi Kurnia hanya tersedia di Cikatomas, Tasikmalaya. Kami berkomitmen untuk memberikan cita rasa terbaik untuk Anda.
+            </p>
+        </section>
+
+        <!-- Konten Manual Aplikasi -->
+        <section id="manual" class="content-section" style="display: none;">
+            <h2 style="color: #008000; text-transform: uppercase; margin-bottom: 20px;">Manual Aplikasi</h2>
+
+            <ol style="font-size: 1.1em; line-height: 1.6; color: #555; padding-left: 20px;">
+                <p style="font-size: 1.1em; line-height: 1.6; color: #555;">Bagaimana Cara Berbelanja di Mie Sehah Resi Kurnia?</p>
+                <li>Pilih produk yang ingin dibeli.</li>
+                <li>Lakukan checkout pesanan Anda via WhatsApp.</li>
+                <li>Selamat menikmati hidangan lezat kami!</li>
+            </ol>
+        </section>
+    </main>
+
+    <!-- Modal untuk Detail Produk -->
+    <div id="productModal" class="modal">
+        <div class="modal-content">
+            <span class="close">×</span>
+            <h2 id="modalTitle"></h2>
+            <img id="modalImage" src="" alt="Product Image">
+            <p id="modalDescription"></p>
+            <h4 id="modalPrice"></h4>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-info">
+                <h3>Mie Sehah Resi Kurnia</h3>
+                <p>Jl. Cikatomas tasikmalaya</p>
+                <p>📞 +6285222285578</p>
+                <p>📧 miesehah@gmail.com</p>
+            </div>
+        </div>
+        <p class="copyright">Copyright © Resi Kurnia</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
